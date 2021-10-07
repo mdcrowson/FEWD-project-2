@@ -1,4 +1,92 @@
+/* General Styles ------------------ */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1.2em;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    line-height: 1.5rem;
+    color: #000;
+    background-color: #fafafa;
+    margin: 0;   
+}
+
+img {
+    width: 100%;
+}
+
+h1, h2, h3, p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+}
+
+h1, h2 {
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+/* Main Styles ------------------ */
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+nav a {
+    padding: 1em;
+    margin: 0.5em 0;
+    background: white;
+    text-align: center;
+}
+
+a, h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+nav a, h2 {
+    font-size: 1rem;
+}
+
+footer a{
+    font-size: 0.75rem;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+#profile-photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+#portfolio {
+    background-color: white;
+    width: 100vw;
+    padding: 1rem 1rem 3rem;
+}
+
+.gallery-item {
+    margin-bottom: 50px;
+}
+
+.gray {
+    color: #7f7f7f;
 }
