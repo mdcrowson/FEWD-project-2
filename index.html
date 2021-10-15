@@ -4,36 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel=stylesheet href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">    
     <title>Student Name</title>
 </head>
 <body>
-    <header class="group">
-        <nav>
-            <h1>Student Name</h1>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-
-        <section>
-            <img src="images/responsive-layout-profile.png" alt="student profile photo" id="profile-photo">
-            <p class="gray">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
-        </section>
+    <header>
+            <nav class="container">
+                <h1>Student Name</h1>
+                <ul class="main-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
     </header>
 
-
     <main>
-        <div id="portfolio" class="group">
+
+        <div id="profile" class="container">
+            <img src="images/responsive-layout-profile.png" alt="student profile photo" id="profile-photo">
+            <p class="gray">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
+        </div>
+
+        <section id="portfolio" class="container">
             
             <h2>Portfolio</h2>
             
-            <section class="gallery">
+            <div class="gallery">
                 
                 <section class="gallery-item">
                     <img src="images/portfolio-1.png" alt="photo of marketing page">
@@ -72,24 +74,51 @@
                 </section>
 
                 
-            </section>
-        </div>
-
-        <section id="contact" class="group">
-            <h2>Contact</h2>
-            <p class="gray">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-            <p class="gray">Phone&nbsp&nbsp&nbsp<strong>+1 (111) 555-1234</strong></p>
-            <p class="gray">Email&nbsp&nbsp&nbsp<strong>email@yoursite.com</strong></p>
+            </div>
         </section>
+        <div class="skills-background">
+            <section id="skills" class="container">
+                <h2>Skills</h2>
+                <ul class="skill-icons">
+                    <li>
+                        <img src="images/html.png" alt="icon for html">
+                        <h3>HTML</h3>
+                    </li>
+                    <li>
+                        <img src="images/design.png" alt="icon for design">
+                        <h3>Design</h3>
+                    </li>
+                    <li>
+                        <img src="images/css.png" alt="icon for css">
+                        <h3>CSS</h3>
+                    </li>
+                </ul>
+                </section>
+                </div>
+        
+        
+            <section id="contact" class="container">
+                <h2>Contact</h2>
+                <p class="gray" id="interested">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+                <p class="gray">Phone&nbsp;&nbsp;&nbsp;<strong>+1 (111) 555-1234</strong></p>
+                <p class="gray">Email&nbsp;&nbsp;&nbsp;<strong>email@yoursite.com</strong></p>
+            </section>
+    
     </main>
 
 
-    <footer>
+    <footer class="container">
         <hr>
-        <section class="flex">
+        <div class="flex">
             <p><strong>Student Name</strong></p>
-            <p><a href=#>Back to Top</a></p>
-        </section>
+            <p class="tablet-hide"><a href=#>Back to Top</a></p>
+            <ul class="footer-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>

@@ -6,31 +6,43 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    line-height: 1.5rem;
+    line-height: 1.5em;
     color: #000;
     background-color: #fafafa;
-    margin: 0;  
-}
-
-.group {
-    padding: 30px 20px;
-}
-
-img {
-    width: 100%;
-}
-
-h1, h2, h3, p {
-    padding-left: 5px;
-    padding-right: 5px;
     text-align: center;
 }
 
-#portfolio p{
-    padding-left: 15px;
-    padding-right: 15px;
+header {
+    background: #62717e;
 }
 
+ul {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+/* Image Styles ------------------ */
+img {
+    width: 100%;
+    margin: 0 auto;
+    padding: .5rem 0;
+    display: block;
+}
+
+.skill-icons img {
+    width: 25%;
+}
+
+#profile-photo {
+    width: 75%;
+}
+
+#portfolio p{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* Text Styles ------------------ */
 h1, h2 {
     margin-bottom: 2rem;
 }
@@ -38,18 +50,21 @@ h1, h2 {
 h1 {
     font-size: 1.75rem;
     font-weight: 700;
-    margin-top: 0px;
+    color: #fff;
 }
 
 h3 {
     font-weight: 500;
 }
 
-/* Main Styles ------------------ */
-
+/* Nav Styles ------------------ */
 a {
     color: #000;
     text-decoration: none;
+}
+
+a:hover {
+    color: #e0ab26;
 }
 
 a, h2 {
@@ -65,41 +80,34 @@ footer a{
     font-size: 0.75rem;
 }
 
-nav li {
-    list-style-type: none;
+.main-nav li {
     padding: 0.5em;
     margin: 0.5em auto;
     background: white;
     text-align: center;
 }
 
-nav li:hover {
-    background: grey;
-}
-
-nav ul {
+.main-nav {
     padding-inline-start: 0px;
 }
 
 nav {
-    padding-bottom: 20px;
+    padding-bottom: 1rem;
 }
 
-#profile-photo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
+/* Container Styles ------------------ */
+.container {
+    padding: 1rem;
+    margin: 0 auto;
 }
 
 #portfolio {
     background-color: white;
     width: 100%;
-    /*padding: 1rem 1rem 1rem;*/
 }
 
 .gallery-item {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .gray {
@@ -117,6 +125,151 @@ nav {
 }
 
 footer {
-    padding-left: 20px;
-    padding-right:20px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
 }
+
+.footer-nav {
+    display: none;
+}
+
+.skill-icons li {
+    padding-bottom: 1.5rem;
+}
+
+.skills-background {
+    background: #ededed;
+}
+
+/* Media Queries ------------------ */
+
+@media (min-width: 768px) {
+  .container {
+      padding: 2rem;
+  }
+
+  .container,
+  footer {
+      max-width: 980px;
+  }
+    
+  #profile {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  #profile-photo {
+      margin-left: 1rem;
+      order: 2;
+      width: 40%;
+  }
+
+  #profile p {
+      text-align: left;
+      order: 1;
+  }
+
+  .main-nav,
+  .footer-nav,
+  .skill-icons {
+    display: flex;
+    justify-content: center;
+    }
+
+    .skill-icons {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .main-nav li,
+    .footer-nav li {
+        background: none;
+        margin: 0;
+    }
+    .main-nav li {
+        padding: 0 1.25rem 1.25rem 1.25rem;
+    }
+
+    .main-nav a {
+        color: #fff;
+    }
+
+    .main-nav a:hover {
+        color: #e0ab26;
+    }
+
+    .footer-nav li {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+
+   
+
+    .footer-nav li:last-child {
+        padding-right: 0;
+    }
+
+    #profile p,
+    #contact p {
+        font-size: 1.25rem;
+        margin-top: 8px;
+    }
+
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .gallery-item {
+        flex-basis: 49%;
+        
+    }
+
+    .tablet-hide {
+        display: none;
+    }
+
+    #contact {
+        width: 600px;
+    }
+
+    #interested {
+        padding-bottom: 2rem;
+    }
+
+}
+
+
+@media (min-width: 1024px) {
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #profile-photo {
+        margin-left: 2rem;
+    }
+
+    .gallery-item {
+        flex-basis: 32%;
+    }
+    .main-nav li:last-child {
+        padding-right: 0;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
